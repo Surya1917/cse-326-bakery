@@ -1,0 +1,237 @@
+/* General Styling */
+/* Setting up the image as a watermark for the entire body */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0d7a7; /* Soft beige */
+  color: #9c634f; /* Earthy brown */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #894e3f; /* Rich brown */
+  color: white;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #eee1ba; /* Light cream */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #c37960; /* Warm caramel */
+}
+
+/* Welcome Section */
+.welcome {
+  padding: 50px 20px;
+  background-color: #f0d7a7; /* Soft beige */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.welcome-text {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.welcome-text h1 {
+  font-size: 3rem;
+  color: #9c634f; /* Deep brown */
+  margin-bottom: 15px;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  color: #894e3f; /* Rich brown */
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #c37960; /* Warm caramel */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #9c634f; /* Deep brown */
+}
+
+.welcome-image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f0d7a7; /* Soft beige */
+}
+
+.about img {
+  max-width: 80%;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Products Section */
+.products {
+  padding: 40px 20px;
+  background-color: #eee1ba; /* Light cream */
+}
+
+.products h2 {
+  color: #894e3f; /* Rich brown */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.products .product-card {
+  background-color: #f0d7a7; /* Soft beige */
+  border: 2px solid #c37960; /* Warm caramel */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products .product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.products .product-card h3 {
+  color: #c37960; /* Warm caramel */
+  margin-bottom: 10px;
+}
+
+.products .product-card p {
+  color: #894e3f; /* Rich brown */
+  line-height: 1.6;
+}
+
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f0d7a7; /* Soft beige */
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #894e3f;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #c37960;
+  border-radius: 5px;
+  background-color: #eee1ba; /* Light cream */
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #c37960; /* Warm caramel */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #894e3f; /* Rich brown */
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #894e3f; /* Rich brown */
+  color: #eee1ba; /* Light cream */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
